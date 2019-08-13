@@ -1,30 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">>
-	<title>hello</title>
-	<img src="cell.png" width="301" height="322" >
+<meta charset="utf-8">>
+<title>hello</title>
+<!-- <img src="cat.jpg" width="495" height="614" align="right"> -->\
+
+<style>
+.video-container {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.video-container video {
+   /*Make video to at least 100% wide and tall */
+ /* min-width: 100%; 
+  min-height: 100%; */
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1; //let the background on the back
+}
+
+*{
+	box-sizing:border-box;
+	text-align: center;
+}	
+
+section li{
+	list-style: none;
+}
+a:link, a:visited {
+	font-size: 25px;
+	text-decoration: none;
+	background-color: #AFEEEE;
+	border: 1px solid blue;
+	color: blue;
+	display: block;
+	width: 180px;
+	text-align: center;
+	margin-bottom: 1px;
+}
+a:hover, a:active {
+	background-color: purple;
+	color:white;
+}
+p{
+	color:orange;
+	width:1000px;
+	font-weight:bold;
+	font-style:italic;
+	font-size:20px;
+}
+h1{
+	color:purple;
+	font-size:50px;
+}
+h2{
+	color:#AFEEEE;//light blue
+	font-size:30px;
+}
+section{
+	color:#87CEEB;
+	font-size:25px;
+}
+#box{
+/*	margin-top: 50px;
+	margin-left: 50px;*/
+	margin:auto;
+	width:220px;
+	border:10px solid white;
+	padding: 0px;
+}	
+
+</style>
 </head>
+		<div class="video-container">
+  <video autoplay loop="true" width="1280" height="720">
+    <source type="video/mp4" src="Heaven.mp4">
+    <source type="video/webm" src="Heaven.webm">
+    <source type="video/ogg" src="Heaven.ogv">
+  </video>
+</div>
 <body>
+  
 	<h1>About me</h1>
 		<h2>Introduction</h2>
-			<div>This is my website.<br>Nice to meet you.<br><br>
-			<div> By Cindy
-		<section>
-		<ul>
-			<li>University</li>
-				<ul>
+			<p>Welcome to my website<br>
+			<p> By Cindy
+		<section id="box">
+		<ul style="padding: 0px">
+			<li style="font-size: 30px;text-align:center;padding: 0px">University</li>
+				<ul style="padding: 0px">
 					<li><a href="#Freshman">Freshman</a></li>
 					<li><a href="#Sophermore">Sophermore</a></li>
 					<li><a href="#Jourior">Jourior</a></li>
 					<li><a href="#Senior">Senior</a></li>
-				</ul>
-			<li><a href="#Intern">Intern</a></li>
-			<li><a href="#Master">Master</a></li>
-		</ul>
+					<li><a href="#Intern">Intern</a></li>	
 		</section>
 		<section id="Freshman">
-			<h3>Freshman</h3>
+			<h3 >Freshman</h3>
 			<p>When I was a freshman......</p>
 		</section>
 		<section id="Sophermore">
@@ -41,11 +125,10 @@
 		</section>
 		<section id="Intern">
 			<h3>Intern</h3>
-			<p>At the first day........</p>
+			<p>轉眼間在聯發科實習已經經過半個月了，漸漸熟悉了這裡的生活，不管是每周的開會，還是完成project都是很有趣的體驗，聽大家報告時，一方面可以了解部門在做的事情，一方面學習怎麼報告，自己報告的時候，也在練習怎麼將自己做的事情清楚地傳達，另外我也發現在大公司裡，大家是各司其職的，非常的有制度，像是有電腦的問題要打電話問IT、要開通工作站必須申請表單，要報交通費要申請不同的表單，經過層層的簽核，最後就能順利完成。</p>
+			<p>來到這裡實習，主管,mentor, 大家都很親切，讓我覺得在這裡實習很自在、愉快。碰到困難時，也會不吝惜教我，使我都能得到有力的幫助，而且大家都非常厲害，光是和大家聊天都會提升我不少的新知和想法，常常會讓我去思考那些我平常沒想過的事情。實習最開心的事情莫過於把所有bug都解決時的時候了，每次都會得到滿滿的成就感，順利達成任務也讓我很開心，而且還常常可以吃到下午茶，在這裡實習真的是相當幸福、充實。
+			</p>
 		</section>
-		<section id="Master">
-			<h3>Master</h3>
-			<p>When I was a master......</p>
-		</section>
+	
 </body>
 </html>
