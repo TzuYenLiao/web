@@ -57,9 +57,10 @@ h2{
 }
 section {
 	color:#87CEEB;
-	font-size:25px;
+	font-size:30px;
 	float:left;
 	width:50%;
+  margin-top: 100px;
 }
 /*    .indent-1 {float: left;} 
     .indent-1 section {width: 50%; float: left;} */
