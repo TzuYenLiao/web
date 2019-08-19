@@ -1,105 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="utf-8">>
-<title>hello</title>
+<title>Cindy's blog</title>
 <!-- <img src="cat.jpg" width="495" height="614" align="right"> -->
-
-<style>
-.video-container {
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 200%; 
-  overflow: hidden;
-}
-
-.video-container video {
-   /*Make video to at least 100% wide and tall */
- /* min-width: 100%; 
-  min-height: 100%; */
-  
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
-  
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: -1; //let the background on the back
-}
-body{
-	background-color: #FFE4E1;
-		position: relative;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-*{
-	box-sizing:border-box;
-	text-align: center;
-}	
-
-section li{
-	list-style: none;
-}
-a:link, a:visited {
-	font-size: 25px;
-	text-decoration: none;
-	background-color: #87CEEB;
-	border: 1px solid #AFEEEE;
-	color: white;
-	display: block;
-	width: 180px;
-	text-align: center;
-	margin-bottom: 1px;
-}
-a:hover, a:active {
-	background-color: #1E90FF;//green
-	color:white;
-}
-p{
-	color:#2F4F4F;//#191970
-	width:1000px;
-	font-weight:bold;
-	font-size:28px;
-	text-align: left;
-	margin-left: 150px;
-}
-h1{
-	color:white;
-	font-size:50px;
-}
-h2{
-	color:#AFEEEE;//light blue
-	font-size:30px;
-}
-section {
-	color:#87CEEB;
-	font-size:25px;
-	float:left;
-	width:50%;
-}
-/*    .indent-1 {float: left;} 
-    .indent-1 section {width: 50%; float: left;} */
-#box{
-/*	margin-top: 50px;
-	margin-left: 50px;*/
-	/*margin:auto;*/
-	margin-left: 20px;
-	margin-top: 100px;
-	margin-right: 20px;
-	width:220px;
-	height: 1000px;
-	border:10px solid white;
-	padding: 0px;
-}	
-
-</style>
+<link rel=stylesheet type="text/css" href="web.css">
 </head>
-		<div class="video-container">
+	<div class="video-container">
   <video autoplay loop="true" width="1280" height="720">
     <source type="video/mp4" src="https://i.imgur.com/gYKhaqA.mp4">
     <source type="video/webm" src="https://imgur.com/eyFfczH.webm">
@@ -109,43 +17,61 @@ section {
 <body>
   
 	<h1 style="margin-top: 80px">Cindy's blog</h1>
-
 		<section id="box">
-		<ul style="padding: 0px">
-			<li style="font-size: 30px;text-align:center;padding: 0px">University</li>
-				<ul style="padding: 0px">
+		<ul class = "drop-down-menu">
+			<li><a href="#">Life Story</a>
+				<ul>
 					<li><a href="#Freshman">Freshman</a></li>
 					<li><a href="#Sophermore">Sophermore</a></li>
 					<li><a href="#Jourior">Jourior</a></li>
 					<li><a href="#Senior">Senior</a></li>
-					<li><a href="#Intern">Intern</a></li>	
+					<li><a href="Intern/index.html">Intern</a></li>	
+				</ul>	
+			</li>
+			<li><a href="#">Learning</a>
+				<ul>
+					<li><a href="#Website Develope">Website Develope</a></li>
+					<li><a href="#Book Review">Book Review</a></li>
+					<li><a href="#Code">Code</a></li>
+				</ul>	
+			</li>
+		</ul>	
 		</section>
 		<section>
+
 			<h3 style="margin-top: 100px">Introduction</h3>
 			<p>Welcome to my website<br>
 			<p> By Cindy
+			<hr color=#87CEEB size="8" align="right">
 		</section>		
+
 		<section id="Freshman">
 			<h3 >Freshman</h3>
 			<p>When I was a freshman......</p>
+			<hr color=#87CEEB size="8" align="right">
 		</section>
+
 		<section id="Sophermore">
 			<h3>Sophermore</h3>
 			<p>When I was a Sophermore......</p>
+			<hr color=#87CEEB size="8" align="right">
 		</section>
 		<section id="Jourior">
 			<h3>Jourior</h3>
 			<p>When I was a Jourior......</p>
+			<hr color=#87CEEB size="8" align="right">
 		</section>
 		<section id="Senior">
 			<h3>Senior</h3>
 			<p>When I was a Senior......</p>
+			<hr color=#87CEEB size="8" align="right">
 		</section>
 		<section id="Intern">
 			<h3>Intern</h3>
 			<p>轉眼間在聯發科實習已經經過半個月了，漸漸熟悉了這裡的生活，不管是每周的開會，還是完成project都是很有趣的體驗，聽大家報告時，一方面可以了解部門在做的事情，一方面學習怎麼報告，自己報告的時候，也在練習怎麼將自己做的事情清楚地傳達，另外我也發現在大公司裡，大家是各司其職的，非常的有制度，像是有電腦的問題要打電話問IT、要開通工作站必須申請表單，要報交通費要申請不同的表單，經過層層的簽核，最後就能順利完成。</p>
 			<p>來到這裡實習，主管,mentor, 大家都很親切，讓我覺得在這裡實習很自在、愉快。碰到困難時，也會不吝惜教我，使我都能得到有力的幫助，而且大家都非常厲害，光是和大家聊天都會提升我不少的新知和想法，常常會讓我去思考那些我平常沒想過的事情。實習最開心的事情莫過於把所有bug都解決時的時候了，每次都會得到滿滿的成就感，順利達成任務也讓我很開心，而且還常常可以吃到下午茶，在這裡實習真的是相當幸福、充實。
 			</p>
+			<hr color=#87CEEB size="8" align="right">
 		</section>
 	
 </body>
